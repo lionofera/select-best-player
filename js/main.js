@@ -1,9 +1,11 @@
+// function to restrict selection of players 
 function stopListItemCreation() {
     if (document.getElementById('list').childNodes.length > 5) {
         document.createElement('li') = false;
     }
 }
 
+// adding eventlistener to all the buttons
 
 document.getElementById('btn-one').addEventListener('click', function() {
     stopListItemCreation()
@@ -48,7 +50,7 @@ document.getElementById('btn-five').addEventListener('click', function() {
     document.getElementById('btn-six').disabled = true;
   })
 
-
+// calculating total players value
   document.getElementById('calc').addEventListener('click', function() {
     let playerFee = parseInt(document.getElementById('player-fee').value);
    let numOfPlayer = document.querySelectorAll('li').length;
@@ -57,7 +59,7 @@ document.getElementById('btn-five').addEventListener('click', function() {
   })
 
   
-
+// final balance calculation
   document.getElementById('calc-total').addEventListener('click', function() {
     let managersFee = parseInt(document.getElementById('manager-fee').value);
     let coachesFee = parseInt(document.getElementById('coach-fee').value);
