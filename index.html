@@ -18,8 +18,8 @@
         <div class="max-w-sm rounded overflow-hidden h-auto shadow-lg mt-10">
             <img class="w-full h-auto" src="./images/Screenshot_20220821-164643_Chrome.jpg" alt="">
             <div class="bg-slate-900 mb-10">
-                <h3 class="text-center font-bold text-3xl py-8 px-4 text-white">Lionel Messi</h3>
-                <div class="flex items-center justify-center">
+                <h3 id="one" class="text-center font-bold text-3xl py-8 px-4 text-white">Lionel Messi</h3>
+                <div id="btn-one" class="flex items-center justify-center">
                   <button class="bg-blue-500 hover:bg-blue-700 text-white text-center font-bold py-4 px-10 rounded">Select</button>
                </div>
 
@@ -29,9 +29,9 @@
         <div class="max-w-sm rounded overflow-hidden h-auto shadow-lg mt-10">
             <img class="w-full h-auto" src="./images/Screenshot_20220821-164753_Chrome.jpg" alt="">
             <div class="bg-slate-900">
-                <h3 class="text-center font-bold text-3xl py-8 px-4 text-white">Christiano Ronaldo</h3>
+                <h3 id="two" class="text-center font-bold text-3xl py-8 px-4 text-white">Christiano Ronaldo</h3>
                 <div class="flex items-center justify-center">
-                  <button class="bg-blue-500 hover:bg-blue-700 text-white text-center font-bold py-4 px-10 rounded">Select</button>
+                  <button id="btn-two" class="bg-blue-500 hover:bg-blue-700 text-white text-center font-bold py-4 px-10 rounded">Select</button>
                </div>
 
             </div>
@@ -40,16 +40,16 @@
         <div class="max-w-sm rounded overflow-hidden h-auto shadow-lg mt-10">
             <img class="w-full h-auto" src="./images/Screenshot_20220821-164822_Chrome.jpg" alt="">
             <div class="bg-slate-900">
-                <h3 class="text-center font-bold text-3xl py-8 px-4 text-white">Kylian Mbappe</h3>
+                <h3 id="three" class="text-center font-bold text-3xl py-8 px-4 text-white">Kylian Mbappe</h3>
                 <div class="flex items-center justify-center">
-                  <button class="bg-blue-500 hover:bg-blue-700 text-white text-center font-bold py-4 px-10 rounded">Select</button>
+                  <button id="btn-three" class="bg-blue-500 hover:bg-blue-700 text-white text-center font-bold py-4 px-10 rounded">Select</button>
                </div>
 
             </div>
 
         </div>
-        <div class="max-w-sm rounded overflow-hidden h-auto shadow-lg mt-10">
-            <h3>Select Your Players</h3>
+        <div class="max-w-sm rounded overflow-hidden h-96 bg-zinc-800 text-white shadow-lg mt-10">
+            <h3 class="text-center font-medium text-3xl p-5">Select Your Players</h3>
             <ol class="" id="list">
 
             </ol>
@@ -57,9 +57,9 @@
         <div class="max-w-sm rounded overflow-hidden h-auto shadow-lg mt-10">
             <img class="w-full h-auto" src="./images/Screenshot_20220821-164931_Chrome.jpg" alt="">
             <div class="bg-slate-900">
-                <h3 class="text-center font-bold text-3xl py-8 px-4 text-white">Mesut Ozil</h3>
+                <h3 id="four" class="text-center font-bold text-3xl py-8 px-4 text-white">Mesut Ozil</h3>
                 <div class="flex items-center justify-center">
-                  <button class="bg-blue-500 hover:bg-blue-700 text-white text-center font-bold py-4 px-10 rounded">Select</button>
+                  <button id="btn-four" class="bg-blue-500 hover:bg-blue-700 text-white text-center font-bold py-4 px-10 rounded">Select</button>
                </div>
 
             </div>
@@ -68,9 +68,9 @@
         <div class="max-w-sm rounded overflow-hidden h-auto shadow-lg mt-10">
             <img class="w-full h-auto" src="./images/Screenshot_20220821-165103_Chrome.jpg" alt="">
             <div class="bg-slate-900">
-                <h3 class="text-center font-bold text-3xl py-8 px-4 text-white">Mohamed Salah</h3>
+                <h3 id="five" class="text-center font-bold text-3xl py-8 px-4 text-white">Mohamed Salah</h3>
                 <div class="flex items-center justify-center">
-                  <button class="bg-blue-500 hover:bg-blue-700 text-white text-center font-bold py-4 px-10 rounded">Select</button>
+                  <button id="btn-five" class="bg-blue-500 hover:bg-blue-700 text-white text-center font-bold py-4 px-10 rounded">Select</button>
                </div>
 
             </div>
@@ -79,27 +79,39 @@
         <div class="max-w-sm rounded overflow-hidden h-auto shadow-lg mt-10">
             <img class="w-full h-auto" src="./images/Screenshot_20220821-165233_Chrome.jpg" alt="">
             <div class="bg-slate-900">
-                <h3 class="text-center font-bold text-3xl py-8 px-4 text-white">Sadio Mane</h3>
+                <h3 id="six" class="text-center font-bold text-3xl py-8 px-4 text-white">Sadio Mane</h3>
                 <div class="flex items-center justify-center">
-                  <button class="bg-blue-500 hover:bg-blue-700 text-white text-center font-bold py-4 px-10 rounded">Select</button>
+                  <button id="btn-six" class="bg-blue-500 hover:bg-blue-700 text-white text-center font-bold py-4 px-10 rounded">Select</button>
                </div>
 
             </div>
-
         </div>
-        <div class="max-w-sm rounded overflow-hidden h-auto shadow-lg mt-10">
+
+
+        <div class="max-w-sm rounded overflow-hidden h-auto w-auto shadow-lg mt-10 bg-stone-800 text-white font-medium h-3/4">
            
-          <h2>Budget</h2>
-          <span>Per Player</span><input id="player-fee" type=""><br>
-          <button id="calc">Calculate</button>
-          <h4>Player Expense: $<span id="total-playerfee">00</span></h4>
-          <span>Manager:</span><input id="manager-fee" type=""><br>
-          <span>Coach:</span><input id="coach-fee" type=""><br><br>
-          <button id="calc-total">Calculate Total</button><br>
-          <span>Total</span> <span>$</span><span id="total">00</span>     
+          <h2 class="text-center font-medium text-3xl p-5">Budget</h2>
+          <span class="ml-2">Per Player</span><input class="py-1 bg-stone-300 rounded px-2 my-3 mx-2 w-48" id="player-fee" type=""><br>
+          <div class="flex items-center justify-center">
+            <button id="calc" class="bg-blue-500 hover:bg-blue-700 text-white text-center font-bold py-2 px-5 rounded">Calculate</button>
+         </div>
+         <div class="font-bold text-center text-2xl m-4">
+            <h4>Player Expense: $<span id="total-playerfee">00</span></h4>   
+         </div> 
+          <span class="ml-2">Manager:</span><input class="py-2 bg-stone-300 rounded px-3 my-3 mx-2 w-48" id="manager-fee" type=""><br>
+          <span class="ml-2">Coach:</span><input class="py-2 bg-stone-300 rounded px-3 my-3 mx-2 w-48" id="coach-fee" type=""><br><br>
+          <div class="flex items-center justify-center">
+            <button id="calc-total" class="bg-blue-500 hover:bg-blue-700 text-white text-center font-bold py-2 px-5 rounded">Calculate Total</button>
+         </div>
+         <br>
+         <div class="font-bold text-center text-2xl">
+            <span>Total</span> <span>$</span><span id="total">00</span>    
+         </div> 
 
         </div>
      </div>
     </section>
+
+    <script src="./js/main.js"></script>
 </body>
 </html>
